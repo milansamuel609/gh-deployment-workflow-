@@ -1,4 +1,4 @@
-name: Deploy To Github Pages (Multi OS Support)
+name: Deploy To Github Pages
 
 on:
   push:
