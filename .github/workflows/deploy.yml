@@ -1,1 +1,28 @@
+name: Deploy To Github Pages (Multi OS Support)
 
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'index.html'
+
+jobs:
+  deploy-ubuntu:
+    runs-on: ubuntu-latest
+   
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup Github Pages
+      uses: actions/configure-pages@v4
+
+    - name: Upload index.html to Github Pages
+      uses: actions/upload-pages-artifact@v3 
+      with:
+        path: .
+
+    - name: Deploy to Github Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
