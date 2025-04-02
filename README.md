@@ -2,6 +2,8 @@
 
 # 🚀 GitHub Pages Deployment Workflow
 
+**Project URL: https://roadmap.sh/projects/github-actions-deployment-workflow**
+
 This project demonstrates how to use **GitHub Actions** to automatically deploy changes to **GitHub Pages** whenever the `index.html` file is updated.  
 
 ## 🌟 Features
